@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập | Hải Sản</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<div class="auth-page">
+    <div class="auth-container">
+
+        <div class="auth-left">
+            <h1>🦐 Hải Sản</h1>
+            <p>Chất lượng tạo nên thương hiệu</p>
+        </div>
+
+        <div class="auth-right">
+
+            <!-- LOGIN -->
+            <div id="loginForm">
+                <h2>Đăng Nhập</h2>
+
+                <form onsubmit="login(event)">
+                    <input type="text" id="loginUsername" placeholder="Tên đăng nhập" required>
+                    <input type="password" id="loginPassword" placeholder="Mật khẩu" required>
+
+                    <div id="loginError" class="error-message"></div>
+
+                    <button type="submit">Đăng nhập</button>
+                </form>
+
+                <p class="switch">
+                    Chưa có tài khoản?
+                    <a href="signup.html">Đăng ký</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
